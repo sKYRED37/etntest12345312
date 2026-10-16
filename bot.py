@@ -23,7 +23,7 @@ async def open_app(update: Update, context: ContextTypes.DEFAULT_TYPE, pts=False
         return
     keyboard = [[InlineKeyboardButton(
         "Открыть ETN RAPIRA ONLINE",
-        web_app=WebAppInfo(url=)
+       web_app=WebAppInfo(url=https://etntestbot.netlify.app)
     )]]
     message = ("Открой рейтинг PTS ETN: очки за победы/поражения, убийства, ассисты и MVP.\n"
                "В рейтинге учитываются подтверждённые турнирные матчи.") if pts else (
