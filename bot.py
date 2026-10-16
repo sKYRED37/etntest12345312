@@ -2,7 +2,7 @@ import os
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo, Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.environ.get("8823524687:AAEN9I8Lfl3N40HgfuQK6uXDZAP3x9Rpxs4", "").strip()
 WEBAPP_URL = os.environ.get("WEBAPP_URL", "").strip()
 
 async def open_app(update: Update, context: ContextTypes.DEFAULT_TYPE, pts=False):
