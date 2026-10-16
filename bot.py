@@ -9,7 +9,10 @@ BOT_TOKEN = os.getenv("8823524687:AAEN9I8Lfl3N40HgfuQK6uXDZAP3x9Rpxs4", "").stri
 if not BOT_TOKEN:
     raise ValueError("BOT_TOKEN is not configured")
     
-WEBAPP_URL = os.environ.get("https://etntestbot.netlify.app").strip()
+WEBAPP_URL = os.environ.get(
+    "WEBAPP_URL",
+    "https://etntestbot.netlify.app"
+).strip()
 
 async def open_app(update: Update, context: ContextTypes.DEFAULT_TYPE, pts=False):
     if not WEBAPP_URL.startswith("https://"):
