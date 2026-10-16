@@ -11,7 +11,7 @@ if not BOT_TOKEN:
     
 WEBAPP_URL = os.environ.get(
     "WEBAPP_URL",
-    "https://etntestbot.netlify.app"
+    "https://etntest8237.netlify.app"
 ).strip()
 
 async def open_app(update: Update, context: ContextTypes.DEFAULT_TYPE, pts=False):
