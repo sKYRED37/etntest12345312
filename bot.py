@@ -4,10 +4,10 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 
 import os
 
-BOT_TOKEN = os.getenv("8823524687:AAEN9I8Lfl3N40HgfuQK6uXDZAP3x9Rpxs4", "").strip()
+BOT_TOKEN = os.getenv("8823524687:AAEN9I8Lfl3N40HgfuQK6uXDZAP3x9Rpxs4").strip()
 
 if not BOT_TOKEN:
-    raise ValueError("8823524687:AAEN9I8Lfl3N40HgfuQK6uXDZAP3x9Rpxs4")
+    raise ValueError("")
     
 WEBAPP_URL = os.environ.get(
     "WEBAPP_URL",
