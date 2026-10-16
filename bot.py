@@ -2,13 +2,14 @@ import os
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo, Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
+
 import os
 
-BOT_TOKEN = (os.environ.get("8823524687:AAEN9I8Lfl3N40HgfuQK6uXDZAP3x9Rpxs4") or "").strip()
+BOT_TOKEN = (os.environ.get("BOT_TOKEN") or "").strip()
 
 if not BOT_TOKEN:
-    raise RuntimeError(
-        "Не задан BOT_TOKEN в переменных окружения хостинга"
+    raise RuntimeError("Не задан BOT_TOKEN в переменных окружения хостинга")
+    
 WEBAPP_URL = os.environ.get("https://etntestbot.netlify.app").strip()
 
 async def open_app(update: Update, context: ContextTypes.DEFAULT_TYPE, pts=False):
