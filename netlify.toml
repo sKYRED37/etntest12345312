@@ -3,7 +3,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://bot-1791912701-5353-skyred123.bothost.tech/api/:splat"
+  to = "bot-1792157643-8952-skyred123.bothost.tech"
   status = 200
   force = true
 
