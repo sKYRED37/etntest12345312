@@ -10,7 +10,7 @@ from pts import (individual_match_pts, coefficient_for_prize, placement_points, 
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.environ.get("ETN_DB_PATH", "/app/data/etn.sqlite3" if os.path.isdir("/app/data") else os.path.join(ROOT, "etn.sqlite3"))
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.environ.get("8823524687:AAEN9I8Lfl3N40HgfuQK6uXDZAP3x9Rpxs4", "").strip()
 INITDATA_MAX_AGE = int(os.environ.get("INITDATA_MAX_AGE", "86400"))
 
 app = Flask(__name__, static_folder="web", static_url_path="")
